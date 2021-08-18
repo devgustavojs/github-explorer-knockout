@@ -10,9 +10,10 @@ function handleSearchUser(){
   }
 }
 
-function handleInputOnChange(){
-  var username = document.getElementById('iUsername').value;
- if(username){
+document.getElementById("iUsername").addEventListener('input', handleInputChange);
+
+function handleInputChange(){
+ if(this.value){
   searchButton.disabled = false;
  }else{
    searchButton.disabled = true;
