@@ -1,0 +1,138 @@
+header{
+
+  padding: 2rem 3rem 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #b2b2b20e;
+}
+
+#aBack{
+  width: 10rem;
+  
+  font-weight: 700;
+  font-size: 1.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+main{
+  margin-top: 3rem;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.mainInfos{
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#userMain{
+  margin-left: 1rem;
+}
+
+#userPicure{
+  border-radius: 9999px;
+
+  width: 8.75rem;
+  height: 8.75rem;
+
+  border: 3px solid var(--purple-color);
+}
+
+#profileName{
+  font-size: 1.5rem;
+  font-weight: 700;
+
+  color: var(--purple-color);
+}
+
+#atP{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+#atP img{
+  margin-right: 0.3rem;
+}
+
+#locationP{
+  display: flex;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+#locationP img{
+  margin-right: 0.5rem;
+}
+
+.line{
+  width: 100%;
+  height: 2px;
+  border-bottom: 1px solid var(--purple-color);
+  margin-bottom: 2rem;
+}
+
+.repositories{
+  display: flex;
+  flex-wrap: wrap;
+}
+.repositories > .repository{
+  margin: 1rem;
+}
+
+.repository{
+  background-color: var(--dark-color);
+
+  width: 20rem;
+  height: 15rem;
+
+  padding: 1rem;
+
+  border-radius: 8px;
+
+  position: relative;
+}
+.repository h2{
+  color: var(--purple-color);
+  cursor: pointer;
+}
+.repository h2:hover{
+  text-decoration: underline;
+}
+
+.repository p{
+  margin-top: 0.5rem;
+}
+
+.repositoryInfos{
+  display: flex;
+
+  position: absolute;
+
+  bottom: 1rem;
+
+  width: 100%;
+}
+
+.repoInfosItem{
+  margin-left: 0.5rem;
+  margin-right: 0.75rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.repoInfosItem img{
+  margin-right: 0.5rem;
+}
