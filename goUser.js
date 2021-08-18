@@ -1,23 +1,33 @@
-var searchButton = document.getElementById('btnSearch');
+function SearchViewModel(){
+  var self = this;
+
+  self.inputValue = ko.observable();
+
+  self.searchButton = () => handleSearchUser();
+  
+  self.isButtonDisabled = ko.observable(true);
+
+  self.inputEventListener = () => {
+
+    if(SearchVM.inputValue()){
+      SearchVM.isButtonDisabled(false);
+    }else{
+      SearchVM.isButtonDisabled(true);
+    }
+  }
+}
+
+var SearchVM = new SearchViewModel();
+
+ko.applyBindings(SearchVM);
 
 function handleSearchUser(){
-  var username = document.getElementById('iUsername').value;
+  var username = SearchVM.inputValue();
   if(username){
     window.open(`/github-search-knockout/profile/index.html?user=${username}`, "_self");
   }else{
     alert('Please, enter a Github Username');
-    searchButton.disabled = true;
   }
-}
-
-document.getElementById("iUsername").addEventListener('input', handleInputChange);
-
-function handleInputChange(){
- if(this.value){
-  searchButton.disabled = false;
- }else{
-   searchButton.disabled = true;
- }
 }
 
 document.body.onkeydown = function(e) {

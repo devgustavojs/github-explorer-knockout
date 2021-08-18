@@ -17,9 +17,11 @@
       name="username" 
       id="iUsername" 
       placeholder="Enter a Github Username" 
+      data-bind="value: inputValue, event: {change: inputEventListener}"
     >
-    <button id="btnSearch" onclick="handleSearchUser()" disabled>Search</button>
+    <button id="btnSearch" data-bind="click: searchButton, attr: {disabled: isButtonDisabled}" >Search</button>
   </main>
 </body>
-<script src="goUser.js"></script>
+<script type='text/javascript' src='../knockout/knockout-3.5.1.js'></script>
+<script type='text/javascript' src="goUser.js"></script>
 </html>
