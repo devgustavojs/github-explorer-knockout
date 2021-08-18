@@ -1,6 +1,6 @@
 ![github search logo](https://github.com/devgustavojs/github-search-knockout/blob/main/img/wallpaper.png)
 
-<h1 align="center" href>GITHUB EXPLORER</h1>
+<h1 align="center" href>GITHUB SEARCH</h1>
 
 <h3 align="center">
   🚀 Status: Finished 🚀

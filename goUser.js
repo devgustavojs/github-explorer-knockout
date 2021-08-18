@@ -3,7 +3,7 @@ var searchButton = document.getElementById('btnSearch');
 function handleSearchUser(){
   var username = document.getElementById('iUsername').value;
   if(username){
-    window.open(`/profile/index.html?user=${username}`, "_self");
+    window.open(`/github-search-knockout/profile/index.html?user=${username}`, "_self");
   }else{
     alert('Please, enter a Github Username');
     searchButton.disabled = true;
