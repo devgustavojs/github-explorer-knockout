@@ -8,7 +8,6 @@ function SearchViewModel(){
   self.isButtonDisabled = ko.observable(true);
 
 //  self.inputEventListener = () => {
-//
 //    if(SearchVM.inputValue()){
 //      SearchVM.isButtonDisabled(false);
 //    }else{
