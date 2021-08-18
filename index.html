@@ -17,7 +17,7 @@
       name="username" 
       id="iUsername" 
       placeholder="Enter a Github Username" 
-      data-bind="value: inputValue"
+      data-bind="value: inputValue, valueUpdate: 'afterkeydown'"
     >
     <button id="btnSearch" data-bind="click: searchButton, attr: {disabled: isButtonDisabled}" >Search</button>
   </main>
