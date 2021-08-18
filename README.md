@@ -15,7 +15,7 @@
 
 [Access the project](https://devgustavojs.github.io/github-search-knockout/)
 ### About:
-This is a React challenge that has a login page and a feed to post, edit and delete your post. 
+This is an App that you can find and see Github repositories.
 
 ### Features:
 
@@ -25,8 +25,15 @@ This is a React challenge that has a login page and a feed to post, edit and del
 - [x] Followers
 - [x] Following
 - [x] Location
+- [] User Not Found Error
 
 ### How it Works:
+When you click to search a Github user, it fetch the Github's api and return data to Knockout mount the interface with the:
+ - user's repositories
+ - name
+ - number of followers
+ - number of followed users
+ - location
 
 ### Tech:
 #### the following tools were used in this project:
