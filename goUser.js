@@ -7,14 +7,22 @@ function SearchViewModel(){
   
   self.isButtonDisabled = ko.observable(true);
 
-  self.inputEventListener = () => {
+//  self.inputEventListener = () => {
+//
+//    if(SearchVM.inputValue()){
+//      SearchVM.isButtonDisabled(false);
+//    }else{
+//      SearchVM.isButtonDisabled(true);
+//    }
+//  }
 
-    if(SearchVM.inputValue()){
-      SearchVM.isButtonDisabled(false);
+  self.inputValue.subscribe(() => {
+    if(SearchVM.inputValue() != ""){
+    SearchVM.isButtonDisabled(false);
     }else{
       SearchVM.isButtonDisabled(true);
     }
-  }
+  })
 }
 
 var SearchVM = new SearchViewModel();
