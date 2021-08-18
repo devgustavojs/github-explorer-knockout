@@ -25,7 +25,7 @@ This is an App that you can find and see Github repositories.
 - [x] Followers
 - [x] Following
 - [x] Location
-- [] User Not Found Error
+- [ ] User Not Found Error
 
 ### How it Works:
 When you click to search a Github user, it fetch the Github's api and return data to Knockout mount the interface with the:
