@@ -5,23 +5,21 @@ function SearchViewModel(){
 
   self.searchButton = () => handleSearchUser();
   
-  self.isButtonDisabled = ko.observable(true);
-
-//  self.inputEventListener = () => {
-//    if(SearchVM.inputValue()){
-//      SearchVM.isButtonDisabled(false);
-//    }else{
-//      SearchVM.isButtonDisabled(true);
-//    }
-//  }
-
-  self.inputValue.subscribe(() => {
-    if(SearchVM.inputValue() != ""){
-    SearchVM.isButtonDisabled(false);
+  self.isButtonDisabled = ko.pureComputed(() => {
+    if(self.inputValue()){
+      return false;
     }else{
-      SearchVM.isButtonDisabled(true);
+      return true;
     }
   })
+
+  //self.inputValue.subscribe((value) => {
+  //  if( value != ""){
+  //    SearchVM.isButtonDisabled(false);
+  //  }else{
+  //    SearchVM.isButtonDisabled(true);
+  //  }
+  //})
 }
 
 var SearchVM = new SearchViewModel();
