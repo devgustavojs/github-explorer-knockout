@@ -13,7 +13,7 @@
  <a href="#tech">Tech</a> • 
 </p>
 
-[Access the project](https://devgustavojs.github.io/github-search-knockout/)
+[Access the project](https://gustavosgdev.github.io/github-search-knockout/)
 ### About:
 This is an App that you can find and see Github repositories.
 
