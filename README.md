@@ -1,6 +1,7 @@
 ![github search logo](https://github.com/devgustavojs/github-search-knockout/blob/main/img/wallpaper.png)
 
 <h1 align="center" href>GITHUB SEARCH</h1>
+<h2 align="center"> This is an admission challenge to <a href="https://www.pegaplantao.com.br/gestao-de-escalas-plantoes">Pega Plantão</a>
 
 <h3 align="center">
   🚀 Status: Finished 🚀
